@@ -54,6 +54,8 @@ grails.project.dependency.resolution = {
         compile ':cache:1.0.0'
 
         compile ":twitter-bootstrap:2.1.1"
-        compile ":less-resources:1.3.0.2"
+        compile(":less-resources:1.3.0.2") {
+            excludes "svn"
+        }
     }
 }
